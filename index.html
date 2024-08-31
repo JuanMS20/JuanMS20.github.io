@@ -2,52 +2,102 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Hoja de Vida de Juan Esteban Morales Sandoval</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Juan Esteban Morales Sandoval</h1>
-      <h2>Estudiante de Tecnologías en Sistemas</h2>
+    <div class="container">
+        <!-- Foto del portafolio -->
+        <div class="row align-items-center my-5">
+            <div class="col-md-4 text-center">
+                <img src="FotoMia.jpg.jpeg" alt="" class="rounded-circle img-fluid">
+            </div>
+            <div class="col-md-8 text-center text-md-start">
+                <h1 class="display-4 text-white">Juan Esteban Morales Sandoval</h1>
+                <p class="lead text-white">19 años, Universitario</p>
+            </div>
+        </div>
+
+        <!-- Información Personal -->
+        <div class="card bg-dark text-white my-3">
+            <div class="card-body">
+                <h5 class="card-title">Información Personal</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombres y Apellidos:</label>
+                        <input type="text" class="form-control" id="Nombres" value="Juan Esteban Morales Sandoval">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" id="telefono" value="(+57) 318 5807593">
+                    </div>
+                    <div class="mb-3">
+                        <label for="localidad" class="form-label">Localidad:</label>
+                        <input type="text" class="form-control" id="localidad" value="Cali, Colombia">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="correo" value="juanesm2004gmail.com">
+                    </div>
+                </form>
+                <button id="addPersonalInfo" class="btn btn-success">Añadir Información Personal</button>
+                <button id="editPersonalInfo" class="btn btn-primary">Editar Información Personal</button>
+                <button id="deletePersonalInfo" class="btn btn-danger">Eliminar Información Personal</button>
+            </div>
+        </div>
+
+        <!-- Educación e Información -->
+        <div class="card bg-dark text-white my-3">
+            <div class="card-body">
+                <h5 class="card-title">Educación e Información</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="universidad" class="form-label">Universidad Santiago de Cali:</label>
+                        <input type="text" class="form-control" id="universidad"
+                            value="Actualmente estudiando el cuarto semestre de Tecnologia en Sistemas de Información">
+                    </div>
+                    <div class="mb-3">
+                        <label for="colegio" class="form-label">Colegio Militar Jose Acevedo Y Gomez:</label>
+                        <input type="text" class="form-control" id="colegio" value="Graduado de Bachiller en el año 2021">
+                    </div>
+                    <div class="mb-3">
+                        <label for="instituto" class="form-label">Instituto Learn English Sede Tequendama:</label>
+                        <input type="text" class="form-control" id="instituto"
+                            value="Graduado Con nivel de ingles B2 en el año 2022">
+                    </div>
+                </form>
+                <button id="addEducationInfo" class="btn btn-success">Añadir Educación</button>
+                <button id="editEducationInfo" class="btn btn-primary">Editar Educación</button>
+                <button id="deleteEducationInfo" class="btn btn-danger">Eliminar Educación</button>
+            </div>
+        </div>
+
+        <!-- Experiencia Laboral -->
+        <div class="card bg-dark text-white my-3">
+            <div class="card-body">
+                <h5 class="card-title">Experiencia Laboral</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="experiencia" class="form-label">Agencia de viajes:</label>
+                        <input type="text" class="form-control" id="experiencia"
+                            value="Actualmente haciendo prácticas con Una agencia de viajes en el area web">
+                    </div>
+                </form>
+                <button id="addWorkExperience" class="btn btn-success">Añadir Experiencia Laboral</button>
+                <button id="editWorkExperience" class="btn btn-primary">Editar Experiencia Laboral</button>
+                <button id="deleteWorkExperience" class="btn btn-danger">Eliminar Experiencia Laboral</button>
+            </div>
+        </div>
     </div>
-    <div class="content">
-      <div class="photo">
-        <img src="FotoMia.jpg.jpeg" alt="Foto de Juan Esteban Morales Sandoval" />
-      </div>
-      <div class="info">
-        <section class="personal-info">
-          <h3>Información Personal</h3>
-          <p><strong>Nombre Completo:</strong> Juan Esteban Morales Sandoval</p>
-          <p><strong>Edad:</strong> 19 años</p>
-          <p><strong>Teléfono:</strong> 3185807593</p>
-          <p><strong>Correo Electrónico:</strong> juan.morales25@usc.edu.co</p>
-        </section>
-        <section class="education">
-          <h3>Estudios Realizados y en Progreso</h3>
-          <ul>
-            <li><strong>Colegio Militar José A. Acavedo y Gómez:</strong> Año 2021 (Graduado con Honores)</li>
-            <li><strong>Instituto de Inglés Learn English:</strong> Año 2022 (Graduado con Certificado B2)</li>
-            <li><strong>Universidad Santiago de Cali:</strong> Año 2023 (Actualmente en curso)</li>
-          </ul>
-        </section>
-        <section class="experience">
-          <h3>Experiencia Laboral</h3>
-          <ul>
-            <li>Actualmente trabajando para una empresa, en el área web y marketing digital.</li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
